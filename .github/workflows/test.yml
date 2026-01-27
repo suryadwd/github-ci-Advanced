@@ -30,14 +30,14 @@ jobs:
       - name: Build Artifact
         run: |
           mkdir build
-          cp app.py requirements.txt build/
-          tar -czf app.tar.gz build/
+          cp app1.py requirements.txt build/
+          tar -czf app1.tar.gz build/
 
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
         with:
-          name: app-artifact
-          path: app.tar.gz
+          name: app1-artifact
+          path: app1.tar.gz
 
 
 
